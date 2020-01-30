@@ -26,13 +26,21 @@ namespace IterationStatement
                 int count = 1;
 
                 //
-                while (count <= value)
+                if ((value >= 1) && (value <= 100))
                 {
-                    //Displays a message with how many times it looped given the user input
-                    Console.WriteLine("You have entered " + value.ToString() + ". " + "This is the current interger value in the loop: " + count.ToString());
+                    while (count <= value)
+                    {
+                        //Displays a message with how many times it looped given the user input
+                        Console.WriteLine("You have entered " + value.ToString() + ". " + "This is the current interger value in the loop: " + count.ToString());
 
-                    //Increases loop count
-                    count++;
+                        //Increases loop count
+                        count++;
+                    }
+                }
+
+                else
+                {
+                    Console.WriteLine("Please enter a value between 1 and 100");
                 }
             }
 
